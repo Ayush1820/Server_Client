@@ -7,7 +7,9 @@ const onData = (req, res) => {
         let storeData = [];
         let toInteger = parseInt(chunk.toString());
         storeData.push(toInteger);
-        console.log(toInteger + 1);
+        const addOne = toInteger + 1;
+        console.log(addOne);
+        res.end(addOne.toString());
     });
 }
 
